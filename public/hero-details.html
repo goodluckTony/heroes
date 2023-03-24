@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/hero-details-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-box">
+        <h1>hero details</h1>
+    </header>
+    <main class="main-box">
+        <div class="hero-box">
+            <div class="hero-card">
+                <p class="title-img">Hero photo:</p>
+                <img class="hero-photo" src="" alt="">
+                <p class="title-name">Name:</p>
+                <h2 class="name" ></h2>
+                <p class="title-power">Power:</p>
+                <h2 class="power"></h2>
+                <p class="title-age">Age:</p>
+                <h2 class="age"></h2>
+                <p class="title-gender">Gender:</p>
+                <h2 class="gender"></h2>
+                <a class="btn-remove" value="" onclick="removeHero()"></a>
+                <button class="btn-heroList" name="button" onclick="toHeroList()">to Hero List</button>
+            </div>
+            <div class="comment-sender">
+                <p class="title-comment">Comment:</p>
+                <input id="textInput" class="sender" type="text" value="Sender Name">
+                <input id="textInput" class="comment" type="text" min="1" max="150" value="Leave a comment">
+                <input class="btn-comment" type="button" value="Send" onclick="comment()">
+            </div>
+        </div>
+        <div class="comment-box">
+
+        </div>
+    </main>
+    <script src="app/hero-details-app.js"></script>
+</body>
+</html>

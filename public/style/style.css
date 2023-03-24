@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #34495e;
+}
+.container {
+    width: 400px;
+    padding: 40px;
+    /* display: flex; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222f3d;
+    text-align: center;
+}
+.container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.photo-upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.photo-display {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #2980b9;
+    background-image: url('../img/upload-icon.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.photo-input {
+    color: #bdbdbd75;
+    width: 220px;
+    font-size: 13px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #2980b9;
+}
+::-webkit-file-upload-button {
+    color: white;
+    border: 2px solid #2980b9;
+    background-color:#2980b9;
+    padding: 10px;
+    /* border: none; */
+    border-radius: 50px;
+    outline: none;
+}
+
+.container input[type="text"],
+.container input[type="number"] {
+    color: #bdbdbd75;
+   
+    background: #222f3d;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+.container input[type="text"]:focus,
+.container input[type="number"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+#gender {
+    color: #bdbdbd75;
+    background: #222f3d;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 225px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+#gender option {
+    color: #bdbdbd75;
+    background: #222f3d;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 225px;
+    outline: none;
+    /* border-radius: 55px; */
+    transition: 0.25s;
+}
+#gender:focus {
+    color: #bdbdbd75;
+    border: 2px solid #2ecc71;
+    width: 300px;
+}
+
+.container input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 150px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.container input[type="submit"]:hover {
+    background-color: #2ecc71;
+}

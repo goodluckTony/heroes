@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #34495e;
+}
+.header-box {
+    display: flex;
+    justify-content: center;
+    background: #222f3d;
+    text-transform: uppercase;
+}
+.header-box h1 {
+    color: white;
+}
+.hero-box {
+    margin-top: 20px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 400px;
+    background: #222f3d;
+}
+.main-box{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+/* .hero-box > p {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+} */
+.hero-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 400px;
+    background: #222f3d;
+}
+.hero-card > p {
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.hero-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.name, .age, .power, .gender {
+    background: none;
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+.gender {
+    margin-bottom: 10px;
+}
+.btn-remove {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+.btn-remove:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.btn-remove:before, .btn-remove:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #2ecc71;
+}
+.btn-remove:before {
+    transform: rotate(45deg);
+}
+.btn-remove:after {
+    transform: rotate(-45deg);
+}
+.btn-heroList {
+    position: absolute; 
+    left: 15px;
+
+
+    font-size: 10px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 5px 0 5px;
+    width: 70px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.btn-heroList:hover {
+    background-color: #2ecc71;
+    opacity: 1;
+}
+.title-comment {
+    color: white;
+    margin: 15px 0 0;
+}
+.comment-sender {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 400px;
+    background: #222f3d;
+}
+.sender {
+    margin-top: 55px;
+    color: #bdbdbd75;
+    background: #222f3d;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 5px 5px;
+    width: 150px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.2s
+}
+.sender:hover {
+    width: 280px;
+    border-color: #2ecc71;
+}
+.sender:focus {
+    content: "";
+}
+.comment {
+    color: #bdbdbd75;
+    background: #222f3d;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+.comment:hover {
+    width: 300px;
+    border-color: #2ecc71;
+}
+.comment:focus {
+    contain: "";
+}
+.btn-comment {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 150px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.btn-comment:hover {
+    background-color: #2ecc71;
+}
+
+/* comments */
+.comment-box {
+    overflow: auto;
+    margin-top: 20px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 400px;
+    background: #222f3d;
+}
+
+.user-box {
+    position: relative;
+    background: none;
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+.display-date {
+    margin: 10px 0;
+    font-size: 12px;
+}
+.display-sender {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-remove-comment {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    opacity: 0.3;
+}
+.btn-remove-comment:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.btn-remove-comment:before,
+.btn-remove-comment:after {
+    position: absolute;
+    left: 10px;
+    content: " ";
+    width: 3px;
+    height: 20px;
+    background-color: #2ecc71;
+
+}
+.btn-remove-comment:before {
+    transform: rotate(45deg);
+}
+.btn-remove-comment::after {
+    transform: rotate(-45deg);
+}

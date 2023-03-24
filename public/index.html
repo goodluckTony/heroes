@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="container" action="">
+        <h1>Superhero Creation</h1>
+        <p class="form-condition"></p>
+        <div class="photo-upload-box">
+            <div class="photo-display" for="photo"></div>
+            <input type="file" name="photo" class="photo-input">
+        </div>
+        <input class="name" type="text" name="name" placeholder="Hero Name">
+        <input class="power" type="text" name="power" placeholder="Hero Power">
+        <input class="age" type="number" name="age" placeholder="Hero Age" min="1" max="999">
+        <select name="gender" id="gender">
+            <option value="">Select your gender:</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <input class="form-btn" type="submit" name="submit" value="Create">
+    </form>
+    
+    <script src="app/app.js"></script>
+</body>
+</html>
